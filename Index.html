@@ -1,22 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Landing Page</title>
-       <link rel="stylesheet" href="public/stylesheets/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
 
-    </head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+</head>
+
 <body>
 
-    <nav></nav>
+    <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
 
-    <section id="heroes"></section>
-    <section id="testimonials"></section>
-    <section id="calltoaction"></section>
+        <a class="font-bold text-2xl lg:text-4xl">Logo</a>
 
-    <footer></footer>
+        <div class="block lg:hidden">
+            <button
+                class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+
+
+        <div class="hidden lg:block">
+            <ul class="inline flex">
+                <li><a class="px-4 font-bold" href="/">Principal</a></li>
+                <li><a class="px-4 hover:text-gray-800" href="#">Acerca de</a></li>
+                <li><a class="px-4 hover:text-gray-800" href="#">Contactanos</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section id="heroes" class="py-32">
+
+        <div class="py-2 container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-2 text-white">LLeva tus proyectos al siguiente nivel</h2>
+            <h3 class="text-2xl mb-8 text-gray-200">Soluciones innovadoras para crecer de manera rapida y efectiva</h3>
+            <button class="bg-white font-bold rounded py-4 px-8 shadow-lg uppercase tracking-wider">Comienza
+                hoy</button>
+        </div>
+
+    </section>
+
+    <section id="testimonials" class="bg-gray-100 container mx-auto px-6 py-20">
+
+        <h2 class="text-4xl text-center text-gray-800 mb-8">Testimonios</h2>
+
+        <div id="cards" class="flex flex-wrap justify-center">
+
+            <div class="w-full md:w-1/4 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2 h-full">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        Mi nuevo celular ha transformado mi forma de comunicarme. La
+                        calidad de las llamadas y videollamadas es excepcional,
+                        lo que me permite sentirme más conectado con mis seres queridos.
+                    </p>
+                    <p class="text-gray-500 text-xs md:text-sm px-6">
+                        Fulanito
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/4 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2 h-full">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        Como estudiante, mi celular es mi mejor aliado. Puedo
+                        acceder a mis libros de texto, tomar notas y estudiar
+                        en cualquier lugar, lo que me facilita mucho la vida
+                        académica.
+                    </p>
+                    <p class="text-gray-500 text-xs md:text-sm px-6">Torcuato</p>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/4 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2 h-full">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        Uso mi celular
+                        para gestionar mis redes sociales y siempre estoy al tanto
+                        de lo que sucede. Las aplicaciones son rápidas y me ayudan a
+                        mantenerme organizado en mi día a día.
+                    </p>
+                    <p class="text-gray-500 text-xs md:text-sm px-6">Menganito</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="calltoaction" class="container mx-auto px-6 text-center py-20">
+
+        <h2 class="mb-6 text-4xl font-bold text-center text-white">¡La oportunidad que esperabas!</h2>
+        <h3 class="my-4 text-2xl text-white">Accede a beneficios exclusivos y haz crecer tu marca</h3>
+        <button class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">Quiero saber
+            más</button>
+
+    </section>
+
+    <footer class="container mx-auto px-6 text-center py-20">
+        <div id="links" class="flex flex-wrap">
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <h5 class="uppercase mb-6 font-bold">Legal</h5>
+                <ul class="mb-4">
+                    <li class="mt-2">
+                        <a href="#" class="hover:underline text-gray-600 hover:text-green-500">Términos y
+                            Condiciones</a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="hover:underline text-gray-600 hover:text-green-500">Políticas de
+                            privacidad</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <h5 class="uppercase mb-6 font-bold">Company</h5>
+                <ul class="mb-4">
+                    <li class="mt-2">
+                        <a href="#" class="hover:underline text-gray-600 hover:text-green-500">Acerca de</a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="hover:underline text-gray-600 hover:text-green-500">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <h5 class="uppercase mb-6 font-bold">Links</h5>
+                <ul class="mb-4">
+                    <li class="mt-2">
+                        <a href="#" class="hover:underline text-gray-600 hover:text-green-500">FAQ</a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="hover:underline text-gray-600 hover:text-green-500">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <h5 class="uppercase mb-6 font-bold">Social</h5>
+                <ul class="mb-4">
+                    <li class="mt-2">
+                        <a href="#" class="hover:underline text-gray-600 hover:text-green-500">X</a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="hover:underline text-gray-600 hover:text-green-500">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 
